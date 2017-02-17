@@ -1,0 +1,11 @@
+<div *ngIf="question">
+    <h3>Title:</h3>
+    <input [(ngModel)]="question.name" type="text">
+
+    <h3>Body:</h3>
+    <input [(ngModel)]="question.mdText" type="text">
+
+    <h3>Preview:</h3>
+    <div class="markdown-content" [innerHTML]="question.getHtmlText()">
+    </div>
+</div>

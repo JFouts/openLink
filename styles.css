@@ -1,0 +1,54 @@
+
+h1, h2, th, .large-text {
+    font-family: 'Fira Sans', sans-serif;
+    color: #546e7a;
+}
+
+p, h3, h4, li, td, .normal-text {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    color: #546e7a;
+}
+
+h5, h6, .small-text {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    color: #546e7a;
+}
+
+.large-text {
+    font-size: 1.8em;
+}
+
+.normal-text {
+    font-size: 1.0em;
+}
+
+.small-text {
+    font-size: 0.8em;
+}
+
+.f-left {
+    float: left;
+}
+
+.f-right {
+    float: right;
+}
+
+.markdown-content table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.markdown-content tr {
+    background-color: #fff;
+}
+
+.markdown-content tr:nth-child(2n) {
+    background-color: #f6f6f6;
+}
+
+.markdown-content td, th {
+    border: 1px solid #546e7a;
+    padding: 6px 13px;
+    box-sizing: border-box;
+}

@@ -1,0 +1,14 @@
+ul {
+    list-style: none;
+    max-width: 500px;
+}
+
+ul>li {
+    min-height: 40px;
+    padding: 8px 10px;
+    background-color: #efeff8;
+}
+
+ul>li:nth-child(2n) {
+    background-color: #fafaff;
+}

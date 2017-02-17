@@ -1,0 +1,31 @@
+<div class="question-block" *ngIf="question">
+    <div class="question-header">
+        <div class="question-name">
+            <h2>{{question.name}}</h2>
+        </div>
+        <div class="user-tag">
+            <ol-user-tag></ol-user-tag>
+        </div>
+    </div>
+    <div class="question-body">
+        <div class="markdown-content" [innerHTML]="question.getHtmlText()">
+        </div>
+        <div class="question-footer">
+            <ul class="question-tags">
+                <li *ngFor="let tag of question.tags">
+                    {{tag}}
+                </li>
+            </ul>
+            <div class="small-text f-right">
+                Asked on {{question.askedDate | date:'MMM dd yyyy'}}
+            </div>
+        </div>
+    </div>
+    <ol-comments></ol-comments>
+</div>
+
+<div *ngIf="!question">
+    <p style="font-family:Arial, Helvetica, sans-serif;font-weight:bold;">
+        <img alt="Loading..." src="assets/loader.gif" />
+    </p>
+</div>

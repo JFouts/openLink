@@ -1,0 +1,26 @@
+.user-tag {
+    overflow: hidden;
+    padding: 2px;
+}
+
+.user-tag a {
+    text-decoration: none;
+    color: #546e7a;
+}
+
+.user-tag div {
+    float: left;
+}
+
+.user-tag img {
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+    display: block;
+}
+
+.user-tag p {
+    margin: 0;
+    padding-top: 8px;
+    display: block;
+}
